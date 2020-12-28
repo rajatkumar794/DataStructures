@@ -42,7 +42,7 @@ public class Main {
 	public MyPriorityQueue(ArrayList<T> arr)
 	{
 	    data=arr;
-	    for(int i=(arr.length-2)/2; i>=0; --i)
+	    for(int i=(arr.size()-2)/2; i>=0; --i)
 	 	downHeapify(i);
 	}
 
