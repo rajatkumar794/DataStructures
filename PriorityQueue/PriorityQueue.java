@@ -39,6 +39,13 @@ public class Main {
             data = new ArrayList < > ();
         }
         
+	public MyPriorityQueue(ArrayList<T> arr)
+	{
+	    data=arr;
+	    for(int i=(arr.length-2)/2; i>=0; --i)
+	 	downHeapify(i);
+	}
+
         public MyPriorityQueue(Comparator comp)
         {
             this.comp = comp;
